@@ -8,91 +8,173 @@
 </head>
 <body>
 
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">HH</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#strengths">強み</a></li>
+        <li><a href="#results">実績</a></li>
+        <li><a href="#career">経歴</a></li>
+        <li><a href="#skills">スキル</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <p class="hero-sub">PORTFOLIO</p>
-      <h1 class="hero-name">韓弘妃<span class="hero-kana">ハン・ホンビ</span></h1>
-      <p class="hero-role">プラットフォーム運営 / 経営支援 / コンテンツ戦略</p>
-      <div class="hero-tags">
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">PORTFOLIO 2026</p>
+      <h1 class="hero-name reveal-up delay-1">韓弘妃</h1>
+      <p class="hero-kana reveal-up delay-2">ハン・ホンビ</p>
+      <div class="hero-tagline reveal-up delay-3">
+        <span class="type-text" id="typeText"></span><span class="cursor">|</span>
+      </div>
+      <div class="hero-chips reveal-up delay-4">
         <span>NHN comico株式会社</span>
         <span>マネジャー</span>
         <span>日韓バイリンガル</span>
+        <span>JLPT N2</span>
       </div>
+      <a href="#about" class="hero-scroll">
+        <span>Scroll</span>
+        <svg width="16" height="24" viewBox="0 0 16 24"><rect x="6" y="0" width="4" height="10" rx="2" fill="rgba(255,255,255,0.4)"/><rect x="6" y="14" width="4" height="10" rx="2" fill="white"/></svg>
+      </a>
     </div>
-  </header>
-
-  <!-- SUMMARY -->
-  <section class="section summary-section">
-    <div class="container">
-      <h2 class="section-title">職務要約</h2>
-      <p class="summary-text">
-        Wisdomhouseでマーケティング素材企画・SNS広告運営を約2年半経験後、NHN Corpでcomico KRの運営・Global One Buildプロジェクトを担当。
-        2022年よりcomico JPの運営と経営支援を一手に担い、<strong>10年ぶりの営業黒字化</strong>に貢献。
-        現在はチームメンバー7名のマネジメントも行いながら、日韓の架け橋として活動中。
-      </p>
+    <div class="hero-bg-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
     </div>
   </section>
 
-  <!-- 4 STRENGTHS -->
-  <section class="section strengths-section">
-    <div class="container">
-      <h2 class="section-title">4つの強み</h2>
-      <div class="strengths-grid">
+  <!-- STATS -->
+  <div class="statsbar" id="statsbar">
+    <div class="statsbar-inner">
+      <div class="stat">
+        <span class="stat-num" data-target="2120" data-suffix="%">0%</span>
+        <span class="stat-label">3ヶ月売上増加</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="51" data-prefix="+" data-suffix="%">0%</span>
+        <span class="stat-label">営業利益改善</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="42" data-prefix="+" data-suffix="%">0%</span>
+        <span class="stat-label">クリック数増加</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="6" data-suffix="カ国">0カ国</span>
+        <span class="stat-label">Global展開</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="10" data-suffix="年ぶり">0年ぶり</span>
+        <span class="stat-label">営業黒字化</span>
+      </div>
+    </div>
+  </div>
 
-        <div class="strength-card">
-          <div class="strength-number">01</div>
+  <!-- ABOUT -->
+  <section class="section bg-white" id="about">
+    <div class="container">
+      <div class="section-label reveal-up">ABOUT</div>
+      <h2 class="section-title reveal-up">職務要約</h2>
+      <div class="about-grid">
+        <p class="about-text reveal-up">
+          Wisdomhouseでマーケティング素材企画・SNS広告運営を約2年半経験後、
+          NHN Corpにてcomico KRの運営・Global One Buildプロジェクト韓国・欧州統括を担当。
+          2022年よりcomico JPの運営と経営支援を一手に担い、
+          <strong>2023年Q4に10年ぶりの営業黒字化</strong>に貢献。
+          現在はチームメンバー7名のマネジメントも行いながら、
+          日韓の架け橋として事業成長を牽引している。
+        </p>
+        <div class="about-cards reveal-up delay-2">
+          <div class="mini-card">
+            <div class="mini-num">7年</div>
+            <div class="mini-label">総業務経験</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-num">7名</div>
+            <div class="mini-label">チームマネジメント</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-num">2言語</div>
+            <div class="mini-label">日韓バイリンガル</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRENGTHS -->
+  <section class="section bg-dark" id="strengths">
+    <div class="container">
+      <div class="section-label light reveal-up">STRENGTHS</div>
+      <h2 class="section-title light reveal-up">4つの強み</h2>
+      <div class="strength-grid">
+
+        <div class="scard reveal-up delay-1">
+          <div class="scard-tag">01</div>
           <h3>企画力</h3>
+          <p class="scard-en">Planning</p>
           <ul>
             <li>マーケティング企画・運営（2018〜2020）</li>
             <li>プラットフォーム運営・機能提案（2020〜現在）</li>
             <li>ターゲット分析に基づくコンテンツ企画</li>
           </ul>
-          <div class="strength-result">
-            <span class="result-num">2,120%</span>
-            <span class="result-label">3ヶ月間の売上増加率</span>
+          <div class="scard-kpi">
+            <span class="kpi-num">2,120%</span>
+            <span class="kpi-desc">3ヶ月間の売上増加率</span>
           </div>
         </div>
 
-        <div class="strength-card">
-          <div class="strength-number">02</div>
+        <div class="scard reveal-up delay-2">
+          <div class="scard-tag">02</div>
           <h3>データ分析力</h3>
+          <p class="scard-en">Data Analysis</p>
           <ul>
             <li>作品別成果KPIの設計</li>
             <li>Soft Launch基準・Content KPI策定</li>
-            <li>Looker Studioでのデータソース構築</li>
+            <li>Looker Studioでの分析データ構築</li>
           </ul>
-          <div class="strength-result">
-            <span class="result-num">+42%</span>
-            <span class="result-label">Matureメニュークリック数増加</span>
+          <div class="scard-kpi">
+            <span class="kpi-num">+42%</span>
+            <span class="kpi-desc">Matureメニュークリック増加</span>
           </div>
         </div>
 
-        <div class="strength-card">
-          <div class="strength-number">03</div>
+        <div class="scard reveal-up delay-3">
+          <div class="scard-tag">03</div>
           <h3>コミュニケーション力</h3>
+          <p class="scard-en">Communication</p>
           <ul>
-            <li>Global One Build 韓国・欧州圏統括（2021〜2022）</li>
-            <li>日韓コミュニケーションのハブ役（2023〜現在）</li>
-            <li>6カ国展開プロジェクトの調整</li>
+            <li>Global One Build 韓国・欧州圏統括</li>
+            <li>日韓コミュニケーションのハブ役</li>
+            <li>6カ国展開プロジェクト調整</li>
           </ul>
-          <div class="strength-result">
-            <span class="result-num">6カ国</span>
-            <span class="result-label">JP / KR / EN / FR / DE / TW</span>
+          <div class="scard-kpi">
+            <span class="kpi-num">6カ国</span>
+            <span class="kpi-desc">JP / KR / EN / FR / DE / TW</span>
           </div>
         </div>
 
-        <div class="strength-card">
-          <div class="strength-number">04</div>
+        <div class="scard reveal-up delay-4">
+          <div class="scard-tag">04</div>
           <h3>戦略立案力</h3>
+          <p class="scard-en">Strategy</p>
           <ul>
-            <li>コンテンツ・経営・マーケティング戦略立案</li>
+            <li>コンテンツ・経営・マーケティング戦略</li>
             <li>翻訳費用削減PM（¥22,000→¥16,000/話）</li>
             <li>PL管理・3カ年計画策定</li>
           </ul>
-          <div class="strength-result">
-            <span class="result-num">+51%</span>
-            <span class="result-label">2024年度営業利益改善</span>
+          <div class="scard-kpi">
+            <span class="kpi-num">+51%</span>
+            <span class="kpi-desc">2024年度営業利益改善</span>
           </div>
         </div>
 
@@ -100,57 +182,76 @@
     </div>
   </section>
 
-  <!-- KEY ACHIEVEMENTS -->
-  <section class="section achievements-section">
+  <!-- RESULTS -->
+  <section class="section bg-white" id="results">
     <div class="container">
-      <h2 class="section-title">主な実績</h2>
-      <div class="achievements-grid">
+      <div class="section-label reveal-up">RESULTS</div>
+      <h2 class="section-title reveal-up">主な実績</h2>
+      <div class="result-list">
 
-        <div class="achievement-card">
-          <div class="ach-icon">📈</div>
-          <div class="ach-content">
-            <h4>マンガ「精神科ナース」売上急拡大</h4>
-            <p>認知度が低かった日常マンガを2030年女性向け素材で再企画。<strong>3ヶ月で売上2,120%以上増加</strong>（10万円台→1,000万円台）。IPの書籍化・Netflixドラマ化を実現。</p>
+        <div class="result-item reveal-left">
+          <div class="result-left">
+            <div class="result-big">2,120%</div>
+            <div class="result-badge">企画力</div>
+          </div>
+          <div class="result-right">
+            <h3>マンガ「精神科ナース」売上急拡大</h3>
+            <p>2030年女性向け素材で再企画。3ヶ月で売上2,120%以上増加（10万円台→1,000万円台）。IPの書籍化・Netflixドラマ化を実現。</p>
           </div>
         </div>
 
-        <div class="achievement-card">
-          <div class="ach-icon">🎯</div>
-          <div class="ach-content">
-            <h4>ハイライト露出案の全国展開</h4>
-            <p>エピソード内フック画像を活用したサムネイル企画により、comico KRのMatureメニュークリック数<strong>42%増</strong>・売上<strong>7%増</strong>。comico全国（JP/KR/EN/FR/TW）で導入。</p>
+        <div class="result-item reveal-right">
+          <div class="result-left">
+            <div class="result-big">全国展開</div>
+            <div class="result-badge">企画力</div>
+          </div>
+          <div class="result-right">
+            <h3>ハイライト露出案のグローバル展開</h3>
+            <p>エピソード内フック画像を活用したサムネイル企画。Matureメニュークリック+42%・売上+7%。comico全国（JP/KR/EN/FR/TW）で導入・運営中。</p>
           </div>
         </div>
 
-        <div class="achievement-card">
-          <div class="ach-icon">💰</div>
-          <div class="ach-content">
-            <h4>10年ぶりの営業黒字化に貢献</h4>
-            <p>運営費削減・作品別損益管理の方針を策定。2023年Q4にcomico JPが<strong>10年ぶりに営業黒字</strong>。2022年比で2023年+32%、2024年+51%の営業利益改善。</p>
+        <div class="result-item reveal-left">
+          <div class="result-left">
+            <div class="result-big">+51%</div>
+            <div class="result-badge">戦略</div>
+          </div>
+          <div class="result-right">
+            <h3>10年ぶりの営業黒字化に貢献</h3>
+            <p>運営費削減・作品別損益管理の方針を策定。2023年Q4に10年ぶり黒字転換。2022比→2023年+32%、2024年+51%営業利益改善。</p>
           </div>
         </div>
 
-        <div class="achievement-card">
-          <div class="ach-icon">✂️</div>
-          <div class="ach-content">
-            <h4>翻訳費用の大幅削減</h4>
-            <p>翻訳会社調査・ミーティング・分析を通じ、エピソードあたり平均翻訳単価を<strong>¥22,000→¥16,000に削減</strong>（¥6,000/話のコスト改善）。</p>
+        <div class="result-item reveal-right">
+          <div class="result-left">
+            <div class="result-big">¥6,000</div>
+            <div class="result-badge">戦略</div>
+          </div>
+          <div class="result-right">
+            <h3>翻訳費用の大幅削減</h3>
+            <p>翻訳会社調査・ミーティング・分析を通じ、エピソードあたり翻訳単価を¥22,000→¥16,000に削減。¥6,000/話のコスト改善を実現。</p>
           </div>
         </div>
 
-        <div class="achievement-card">
-          <div class="ach-icon">📱</div>
-          <div class="ach-content">
-            <h4>ショートマンガ戦略で新規ユーザーのPU促進</h4>
-            <p>ショートコンテンツ消費トレンドを分析し、ショートマンガのリリースを提案。消費力が最も低かった<strong>2024年登録ユーザーの購入比率向上</strong>を実現。</p>
+        <div class="result-item reveal-left">
+          <div class="result-left">
+            <div class="result-big">PU向上</div>
+            <div class="result-badge">データ</div>
+          </div>
+          <div class="result-right">
+            <h3>ショートマンガ戦略で購入率促進</h3>
+            <p>消費トレンド分析からショートマンガをリリース提案。最も消費力が低かった2024年登録ユーザーの購入比率向上を実現。</p>
           </div>
         </div>
 
-        <div class="achievement-card">
-          <div class="ach-icon">🌐</div>
-          <div class="ach-content">
-            <h4>Global One Buildプロジェクト統括</h4>
-            <p>comico全6カ国のプラットフォーム統合プロジェクトで、<strong>韓国・欧州圏の統括</strong>を2年間担当。決済移行・運営方針策定・企画開発部署間調整を推進。</p>
+        <div class="result-item reveal-right">
+          <div class="result-left">
+            <div class="result-big">2年統括</div>
+            <div class="result-badge">コミュ</div>
+          </div>
+          <div class="result-right">
+            <h3>Global One Buildプロジェクト</h3>
+            <p>comico全6カ国プラットフォーム統合で韓国・欧州圏を2年間統括。決済移行・運営方針策定・企画開発部署間調整を推進。</p>
           </div>
         </div>
 
@@ -158,62 +259,69 @@
     </div>
   </section>
 
-  <!-- CAREER TIMELINE -->
-  <section class="section career-section">
+  <!-- CAREER -->
+  <section class="section bg-gray" id="career">
     <div class="container">
-      <h2 class="section-title">職務経歴</h2>
+      <div class="section-label reveal-up">CAREER</div>
+      <h2 class="section-title reveal-up">職務経歴</h2>
       <div class="timeline">
+        <div class="tl-line"></div>
 
-        <div class="timeline-item">
-          <div class="timeline-period">2025.06 〜 現在</div>
-          <div class="timeline-content">
+        <div class="tl-item reveal-up delay-1">
+          <div class="tl-marker current"></div>
+          <div class="tl-card">
+            <div class="tl-period">2025.06 〜 現在</div>
+            <div class="tl-now-badge">現在</div>
             <h3>NHN comico株式会社</h3>
-            <p class="timeline-dept">運営チーム</p>
+            <p class="tl-dept">運営チーム</p>
             <ul>
               <li>comico JP プラットフォーム運営・プロモーション企画</li>
               <li>コンテンツ・経営・マーケティング戦略の立案</li>
-              <li>日韓の架け橋役</li>
+              <li>チームメンバー7名のマネジメント</li>
               <li><strong>2025年度の黒字化達成に貢献</strong></li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-period">2022.12 〜 2025.05</div>
-          <div class="timeline-content">
+        <div class="tl-item reveal-up delay-2">
+          <div class="tl-marker"></div>
+          <div class="tl-card">
+            <div class="tl-period">2022.12 〜 2025.05</div>
             <h3>NHN comico Korea（NHN Corp）</h3>
-            <p class="timeline-dept">MD部 ／ 海外出向（2024.01〜）</p>
+            <p class="tl-dept">MD部 ／ 2024.01〜 NHN comico株式会社 海外出向</p>
             <ul>
-              <li>comico JP 運営・プロモーション企画</li>
+              <li>comico JP 運営・プロモーション企画・データ分析に基づく方針策定</li>
               <li>コンテンツ・経営・マーケティング戦略立案</li>
-              <li>2023年Q4：営業利益ベース黒字化（10年ぶり）</li>
+              <li><strong>2023年Q4：営業利益ベース黒字化（10年ぶり）</strong></li>
               <li>2022比 2023年+32%・2024年+51% 営業利益改善</li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-period">2020.07 〜 2022.11</div>
-          <div class="timeline-content">
+        <div class="tl-item reveal-up delay-3">
+          <div class="tl-marker"></div>
+          <div class="tl-card">
+            <div class="tl-period">2020.07 〜 2022.11</div>
             <h3>NHN Corp</h3>
-            <p class="timeline-dept">MD部</p>
+            <p class="tl-dept">MD部</p>
             <ul>
               <li>comico KR プラットフォーム運営・プロモーション企画</li>
-              <li>Global One Build プロジェクト 韓国・欧州圏統括</li>
-              <li>Matureメニュークリック+42%・売上+7%の企画全国展開</li>
+              <li>Global One Build プロジェクト 韓国・欧州圏統括（2年間）</li>
+              <li>Matureメニュークリック+42%・売上+7%の企画を全国展開</li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-period">2018.02 〜 2020.06</div>
-          <div class="timeline-content">
+        <div class="tl-item reveal-up delay-4">
+          <div class="tl-marker"></div>
+          <div class="tl-card">
+            <div class="tl-period">2018.02 〜 2020.06</div>
             <h3>Wisdomhouse</h3>
-            <p class="timeline-dept">マーケティング部</p>
+            <p class="tl-dept">マーケティング部</p>
             <ul>
-              <li>オンライン広告素材企画・SNSメディア運営</li>
-              <li>「精神科ナース」企画で3ヶ月売上2,120%増</li>
-              <li>BLマンガ動画YouTube 60万ヒット突破</li>
+              <li>オンライン広告素材企画・SNSメディア運営・広告代理店管理</li>
+              <li>「精神科ナース」企画で3ヶ月売上2,120%増・IP拡張（書籍化・ドラマ化）</li>
+              <li>BLマンガ動画制作 → YouTube 60万ヒット突破</li>
             </ul>
           </div>
         </div>
@@ -223,61 +331,67 @@
   </section>
 
   <!-- SKILLS -->
-  <section class="section skills-section">
+  <section class="section bg-dark" id="skills">
     <div class="container">
-      <h2 class="section-title">スキル・資格</h2>
+      <div class="section-label light reveal-up">SKILLS</div>
+      <h2 class="section-title light reveal-up">スキル・資格</h2>
       <div class="skills-grid">
-        <div class="skills-col">
-          <h3>PCスキル</h3>
-          <div class="skill-item">
+
+        <div class="skill-block reveal-up delay-1">
+          <div class="skill-block-head">PCスキル</div>
+          <div class="skill-row">
             <span class="skill-name">Excel</span>
             <span class="skill-detail">VLOOKUP・IF関数・ピボットテーブル（5年以上）</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-row">
             <span class="skill-name">PowerPoint</span>
             <span class="skill-detail">社外プレゼン資料作成（5年以上）</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-row">
             <span class="skill-name">Looker Studio</span>
-            <span class="skill-detail">データソース構築・分析ダッシュボード作成</span>
+            <span class="skill-detail">データソース構築・分析ダッシュボード</span>
           </div>
         </div>
-        <div class="skills-col">
-          <h3>言語</h3>
-          <div class="skill-item">
+
+        <div class="skill-block reveal-up delay-2">
+          <div class="skill-block-head">言語</div>
+          <div class="skill-row">
             <span class="skill-name">日本語</span>
-            <span class="skill-detail">JLPT N2（2025年取得）・業務使用</span>
+            <span class="skill-detail">JLPT N2（2025年）・業務使用</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-row">
             <span class="skill-name">韓国語</span>
             <span class="skill-detail">ネイティブ</span>
           </div>
         </div>
-        <div class="skills-col">
-          <h3>資格</h3>
-          <div class="skill-item">
-            <span class="skill-name">日本語能力試験 N2</span>
-            <span class="skill-detail">2025年取得</span>
+
+        <div class="skill-block reveal-up delay-3">
+          <div class="skill-block-head">資格</div>
+          <div class="skill-row">
+            <span class="skill-name">JLPT N2</span>
+            <span class="skill-detail">日本語能力試験（2025年取得）</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-row">
             <span class="skill-name">コンピュータ活用能力2級</span>
-            <span class="skill-detail">Microsoft Excel（韓国）2018年取得</span>
+            <span class="skill-detail">Microsoft Excel（2018年）</span>
           </div>
-          <div class="skill-item">
-            <span class="skill-name">コンピュータグラフィックス運用技</span>
-            <span class="skill-detail">Adobe Photoshop（韓国）2017年取得</span>
+          <div class="skill-row">
+            <span class="skill-name">CGオペレーター</span>
+            <span class="skill-detail">Adobe Photoshop（2017年）</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <p>韓弘妃 &nbsp;|&nbsp; Portfolio 2026</p>
+    <div class="container footer-inner">
+      <span class="footer-name">韓弘妃</span>
+      <span class="footer-copy">Portfolio 2026</span>
     </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
