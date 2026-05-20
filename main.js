@@ -56,7 +56,7 @@ if (statsbar) {
   new IntersectionObserver(([e]) => {
     if (e.isIntersecting && !done) {
       done = true;
-      document.querySelectorAll('.sb-num').forEach(animateNum);
+      document.querySelectorAll('.sb-num[data-target]').forEach(animateNum);
     }
   }, { threshold: 0.5 }).observe(statsbar);
 }

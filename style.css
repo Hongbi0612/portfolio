@@ -669,16 +669,15 @@ section.hero {
 }
 .rc:hover .rc-img img { transform: scale(1.04); }
 
-/* Featured: 상단 3개 */
-.rc.featured .rc-img { height: 180px; }
-.rc.featured .rc-num { font-size: 2.1rem; }
+/* Featured / Compact: 동일 크기 통일 */
+.rc.featured .rc-img { height: 160px; }
+.rc.featured .rc-num { font-size: 2rem; }
 
-/* Compact: 하단 3개 */
-.rc.compact .rc-img { height: 90px; }
-.rc.compact .rc-num { font-size: 1.5rem; }
-.rc.compact .rc-body { padding: 1rem 1.25rem; }
-.rc.compact h4 { font-size: 0.98rem; }
-.rc.compact p  { font-size: 0.88rem; line-height: 1.75; }
+.rc.compact .rc-img  { height: 160px; }
+.rc.compact .rc-num  { font-size: 2rem; }
+.rc.compact .rc-body { padding: 1.5rem; }
+.rc.compact h4 { font-size: 1.05rem; }
+.rc.compact p  { font-size: 0.94rem; line-height: 1.8; }
 
 .rc-body { padding: 1.5rem; }
 
