@@ -4,7 +4,7 @@
 :root {
   --ink:      #171717;
   --ink2:     #3D4451;
-  --muted:    #5F6673;
+  --muted:    #4A5568;
   --border:   #E3E0DA;
   --bg:       #FAFAF7;
   --light:    #F6F3EE;
@@ -91,12 +91,12 @@ p, li, h1, h2, h3, h4, span {
 /* ===== HERO ===== */
 section.hero {
   background: linear-gradient(160deg, #0F172A 0%, #141C2E 55%, #1F2A44 100%);
-  min-height: 100vh;
+  min-height: 88vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 3rem;
-  padding: 100px 6rem 60px;
+  padding: 80px 5.5rem 44px;
   max-width: none;
   margin: 0;
 }
@@ -303,6 +303,11 @@ section.hero {
   letter-spacing: 0.04em;
 }
 
+.sb-num.sb-text {
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
 .sb-sep {
   width: 1px;
   height: 36px;
@@ -310,7 +315,8 @@ section.hero {
 }
 
 /* ===== SECTIONS ===== */
-.section { padding: 6rem 0; }
+.section { padding: 4rem 0; }
+#skills { padding: 3.5rem 0; }
 .bg-white { background: var(--bg); }
 .bg-light  { background: var(--light); }
 
@@ -342,7 +348,7 @@ section.hero {
 }
 
 .about-text p {
-  font-size: 1rem;
+  font-size: 1.06rem;
   color: var(--ink2);
   line-height: 1.95;
   margin-bottom: 1rem;
@@ -389,9 +395,9 @@ section.hero {
 }
 
 .cap-card p {
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 0.5rem;
 }
 
@@ -457,7 +463,7 @@ section.hero {
 }
 
 .floom-desc {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: rgba(255,255,255,0.65);
   line-height: 1.85;
   margin-bottom: 2rem;
@@ -627,7 +633,7 @@ section.hero {
 .result-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .rc {
@@ -669,10 +675,10 @@ section.hero {
 
 /* Compact: 하단 3개 */
 .rc.compact .rc-img { height: 90px; }
-.rc.compact .rc-num { font-size: 1.35rem; }
+.rc.compact .rc-num { font-size: 1.5rem; }
 .rc.compact .rc-body { padding: 1rem 1.25rem; }
-.rc.compact h4 { font-size: 0.88rem; }
-.rc.compact p  { font-size: 0.8rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.rc.compact h4 { font-size: 0.98rem; }
+.rc.compact p  { font-size: 0.88rem; line-height: 1.75; }
 
 .rc-body { padding: 1.5rem; }
 
@@ -698,6 +704,19 @@ section.hero {
   align-items: center;
   justify-content: center;
 }
+
+/* 카드별 컬러 아이콘 배경 */
+.rc-img.rc-warm  { background: #FEF9EC; }
+.rc-img.rc-blue  { background: var(--navy-lt); }
+.rc-img.rc-coral { background: #FEF2F1; }
+.rc-img.rc-green { background: #EFFAF6; }
+.rc-img.rc-slate { background: #F1F5F9; }
+.rc-img.rc-warm  .rc-svg-icon { color: #D97706; opacity: 0.85; }
+.rc-img.rc-blue  .rc-svg-icon { color: var(--navy); opacity: 0.7; }
+.rc-img.rc-coral .rc-svg-icon { color: var(--coral); opacity: 0.8; }
+.rc-img.rc-green .rc-svg-icon { color: var(--teal); opacity: 0.8; }
+.rc-img.rc-slate .rc-svg-icon { color: var(--muted); opacity: 0.7; }
+
 .rc-svg-icon { width: 52px; height: 52px; color: #94A3B8; opacity: 0.75; }
 
 .rc-num {
@@ -723,7 +742,7 @@ section.hero {
 }
 
 .rc h4 {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--ink);
   margin-bottom: 0.5rem;
@@ -731,9 +750,9 @@ section.hero {
 }
 
 .rc p {
-  font-size: 0.85rem;
+  font-size: 0.94rem;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 /* ===== AWARD BLOCK ===== */
@@ -964,7 +983,7 @@ section.hero {
 .tl-card ul { list-style: none; padding: 0; }
 
 .tl-card ul li {
-  font-size: 0.875rem;
+  font-size: 0.94rem;
   color: var(--ink2);
   padding: 0.22rem 0 0.22rem 1.1rem;
   position: relative;
