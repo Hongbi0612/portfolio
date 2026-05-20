@@ -3,14 +3,15 @@
 
 :root {
   --ink:      #171717;
-  --ink2:     #3D4451;
-  --muted:    #4A5568;
-  --border:   #E3E0DA;
-  --bg:       #FAFAF7;
-  --light:    #F6F3EE;
-  --navy:     #1F2A44;
-  --navy-lt:  #EEF0F5;
-  --coral:    #D94F3D;
+  --ink2:     #5E625F;
+  --muted:    #5E625F;
+  --border:   #DED8CE;
+  --bg:       #F7F4EE;
+  --light:    #EDE9E1;
+  --card:     #FFFCF6;
+  --navy:     #1E2933;
+  --navy-lt:  #E8EDF5;
+  --coral:    #B94A3A;
   --teal:     #2F7D73;
   --floom1:   #7C3AED;
   --floom2:   #EC4899;
@@ -46,7 +47,7 @@ p, li, h1, h2, h3, h4, span {
 }
 
 .nav.scrolled {
-  background: rgba(250,250,247,0.96);
+  background: rgba(247,244,238,0.96);
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--border);
 }
@@ -78,19 +79,19 @@ p, li, h1, h2, h3, h4, span {
 .nav-links a {
   font-size: 0.82rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.75);
+  color: var(--ink2);
   text-decoration: none;
   letter-spacing: 0.04em;
   transition: color 0.2s;
 }
 
 .nav.scrolled .nav-links a { color: var(--muted); }
-.nav-links a:hover { color: white; }
+.nav-links a:hover { color: var(--navy); }
 .nav.scrolled .nav-links a:hover { color: var(--navy); }
 
 /* ===== HERO ===== */
 section.hero {
-  background: linear-gradient(160deg, #0F172A 0%, #141C2E 55%, #1F2A44 100%);
+  background: var(--bg);
   min-height: 88vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,7 +102,7 @@ section.hero {
   margin: 0;
 }
 
-.hero-left { color: white; }
+.hero-left { color: var(--ink); }
 
 .hero-tag {
   display: inline-block;
@@ -109,11 +110,11 @@ section.hero {
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #94A3B8;
-  background: rgba(148,163,184,0.1);
-  border: 1px solid rgba(148,163,184,0.2);
+  color: var(--muted);
+  background: rgba(94,98,95,0.07);
+  border: 1px solid var(--border);
   padding: 0.35rem 1rem;
-  border-radius: 100px;
+  border-radius: 4px;
   margin-bottom: 1.5rem;
 }
 
@@ -122,7 +123,7 @@ section.hero {
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 0.5rem;
-  color: white;
+  color: var(--navy);
   letter-spacing: 0.01em;
 }
 
@@ -130,7 +131,7 @@ section.hero {
   display: block;
   font-size: 1rem;
   font-weight: 400;
-  color: #94A3B8;
+  color: var(--muted);
   letter-spacing: 0.2em;
   margin-top: 0.4rem;
   margin-bottom: 1.5rem;
@@ -138,12 +139,12 @@ section.hero {
 
 .hero-lead {
   font-size: 1.05rem;
-  color: rgba(255,255,255,0.75);
+  color: var(--ink2);
   line-height: 1.9;
   margin-bottom: 2rem;
 }
 
-.hero-lead strong { color: white; }
+.hero-lead strong { color: var(--ink); }
 
 .hero-nums {
   display: flex;
@@ -156,11 +157,11 @@ section.hero {
 .hn-big {
   font-size: 1.3rem;
   font-weight: 900;
-  color: white;
+  color: var(--navy);
   line-height: 1;
   min-width: 90px;
 }
-.hn-small { font-size: 0.82rem; color: rgba(255,255,255,0.5); }
+.hn-small { font-size: 0.82rem; color: var(--muted); }
 
 .hero-cta {
   display: inline-flex;
@@ -171,16 +172,16 @@ section.hero {
   font-size: 0.9rem;
   font-weight: 600;
   padding: 0.85rem 1.75rem;
-  border-radius: 100px;
+  border-radius: 6px;
   text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
-  box-shadow: 0 4px 20px rgba(217,79,61,0.35);
+  transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+  box-shadow: 0 1px 4px rgba(185,74,58,0.18);
 }
 
 .hero-cta:hover {
-  transform: translateY(-2px);
-  background: #C03A2B;
-  box-shadow: 0 8px 30px rgba(217,79,61,0.45);
+  transform: translateY(-1px);
+  background: #9F3D31;
+  box-shadow: 0 3px 10px rgba(185,74,58,0.22);
 }
 
 /* ===== HERO COLLAGE ===== */
@@ -200,7 +201,7 @@ section.hero {
   position: absolute;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 24px 60px rgba(0,0,0,0.45);
+  box-shadow: 0 10px 36px rgba(0,0,0,0.18);
 }
 
 .collage-card img {
@@ -362,7 +363,7 @@ section.hero {
 }
 
 .cap-card {
-  background: var(--bg);
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1.25rem;
@@ -556,7 +557,7 @@ section.hero {
 
 /* ===== PROFIT CHART ===== */
 .profit-block {
-  background: var(--bg);
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 2rem;
@@ -637,7 +638,7 @@ section.hero {
 }
 
 .rc {
-  background: var(--bg);
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 0;
@@ -918,7 +919,7 @@ section.hero {
 }
 
 .tl-card {
-  background: var(--bg);
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1.5rem 1.75rem;
@@ -1009,7 +1010,7 @@ section.hero {
 }
 
 .skill-group {
-  background: var(--bg);
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1.75rem;
