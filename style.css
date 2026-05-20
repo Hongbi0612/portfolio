@@ -582,7 +582,19 @@ section.hero {
 }
 .dv-item:hover { background: rgba(255,255,255,0.1); }
 
-.dv-icon { font-size: 1.5rem; margin-bottom: 0.4rem; }
+.dv-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.6rem;
+  color: #C4B5FD;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.dv-icon svg { width: 18px; height: 18px; }
 .dv-label { font-size: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.4; }
 
 .floom-img-placeholder {
@@ -761,6 +773,31 @@ section.hero {
   line-height: 1.7;
 }
 
+/* ===== RC ICON VARIANTS ===== */
+.rc-img.rc-img-icon {
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+}
+.rc-img.rc-img-dark {
+  background: linear-gradient(135deg, #1E1B4B 0%, #312E81 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rc-svg-icon {
+  width: 52px;
+  height: 52px;
+  color: #A5B4FC;
+  opacity: 0.7;
+}
+.rc-img.rc-img-dark .rc-svg-icon {
+  color: #C4B5FD;
+  opacity: 0.85;
+}
+
 /* ===== AWARD BADGE ===== */
 .award-badge {
   display: inline-flex;
@@ -858,7 +895,7 @@ section.hero {
 
 .cg-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
 }
 
@@ -870,6 +907,12 @@ section.hero {
   background: var(--light);
   border: 1px solid var(--border);
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* sneakpeek 배너: 전체 너비 가로 배너 */
+.cg-item.cg-banner {
+  grid-column: 1 / -1;
+  aspect-ratio: 21/7;
 }
 
 .cg-item:hover {
@@ -1073,7 +1116,34 @@ section.hero {
 }
 .sg-item:last-child { border-bottom: none; }
 
-.sg-icon { font-size: 1rem; flex-shrink: 0; }
+.sg-icon {
+  width: 30px;
+  height: 30px;
+  background: var(--blue-lt);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+.sg-icon svg { width: 14px; height: 14px; }
+
+.sg-flag {
+  width: 30px;
+  height: 30px;
+  background: var(--blue-lt);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: var(--blue);
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
 .sg-name { font-size: 0.85rem; color: var(--ink2); font-weight: 500; }
 
 /* ===== FOOTER ===== */
@@ -1127,6 +1197,7 @@ section.hero {
   .skills-layout { grid-template-columns: 1fr; }
   .tl-item { grid-template-columns: 70px 1fr; }
   .cg-grid { grid-template-columns: repeat(2, 1fr); }
+  .cg-item.cg-banner { grid-column: 1 / -1; aspect-ratio: 16/6; }
   .award-block { grid-template-columns: 1fr; }
   .award-photo-wrap { height: 240px; }
   .award-info { padding: 1.5rem 2rem; }
