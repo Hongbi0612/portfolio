@@ -1091,6 +1091,13 @@ section.hero {
 }
 
 .f-name { font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.5); }
+.f-email {
+  font-size: 0.85rem;
+  color: #A5B4FC;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.f-email:hover { color: white; }
 .f-copy { font-size: 0.8rem; color: rgba(255,255,255,0.25); }
 
 /* ===== REVEAL ANIMATIONS ===== */
