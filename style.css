@@ -18,18 +18,18 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --ink:        #17202A;
-  --ink2:       #1E2329;
-  --muted:      #62615C;
-  --border:     #D8CEC0;
-  --bg:         #F4EFE6;
-  --light:      #E8DFD2;
-  --card:       #FFF9F0;
-  --navy:       #1E2933;
-  --navy-lt:    #E8EDF5;
-  --coral:      #B84A3A;
-  --brick-dark: #94372E;
-  --teal:       #2F7D73;
+  --ink:        #111827;
+  --ink2:       #1F2937;
+  --muted:      #6B7280;
+  --border:     #E5E7EB;
+  --bg:         #FAFAFA;
+  --light:      #F3F4F6;
+  --card:       #FFFFFF;
+  --navy:       #111827;
+  --navy-lt:    #EFF6FF;
+  --coral:      #1D4ED8;   /* 포인트 컬러 1개: 프로페셔널 블루 */
+  --brick-dark: #1E40AF;
+  --teal:       #0F766E;
   --floom1:     #7C3AED;
   --floom2:     #EC4899;
 }
@@ -64,7 +64,7 @@ p, li, h1, h2, h3, h4, span {
 }
 
 .nav.scrolled {
-  background: rgba(244,239,230,0.97);
+  background: rgba(250,250,250,0.97);
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--border);
 }
@@ -463,18 +463,14 @@ section.hero {
 
 /* ===== FLOOM ===== */
 .floom-section {
-  background: linear-gradient(160deg, #0F172A 0%, #141C2E 60%, #1F2A44 100%);
+  background: #0F172A;  /* 클린 다크 - 그라데이션 제거 */
   padding: 6rem 0;
   overflow: hidden;
   position: relative;
 }
 
 .floom-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 80% 20%, rgba(124,58,237,0.07) 0%, transparent 50%);
-  pointer-events: none;
+  display: none;
 }
 
 .floom-layout {
@@ -510,10 +506,7 @@ section.hero {
 
 .floom-logo-text {
   font-style: italic;
-  background: linear-gradient(135deg, #C4B5FD, #F9A8D4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #93C5FD;  /* 그라데이션 제거 → 단색 라이트 블루 */
 }
 
 .floom-desc {
@@ -724,16 +717,11 @@ section.hero {
 .rc:hover .rc-img img { transform: scale(1.04); }
 
 /* Featured / Compact: 동일 크기 통일 */
-.rc.featured .rc-img { height: 160px; }
 .rc.featured .rc-num { font-size: 2rem; }
+.rc.compact .rc-num  { font-size: 1.6rem; }
+.rc.compact h3 { font-size: 0.98rem; }
 
-.rc.compact .rc-img  { height: 160px; }
-.rc.compact .rc-num  { font-size: 2rem; }
-.rc.compact .rc-body { padding: 1.5rem; }
-.rc.compact h4 { font-size: 1.05rem; }
-.rc.compact p  { font-size: 0.94rem; line-height: 1.8; }
-
-.rc-body { padding: 1.5rem; }
+.rc-body { padding: 1.75rem; }
 
 .rc.highlight {
   background: var(--navy);
@@ -1119,6 +1107,48 @@ section.hero {
 
 .sg-name { font-size: 0.85rem; color: var(--ink2); font-weight: 500; }
 
+/* ===== RESULT CARD FLOW (課題→分析→施策→結果) ===== */
+.rc-flow {
+  list-style: none;
+  padding: 0;
+  margin: 0.9rem 0 0;
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+}
+
+.rc-flow-item {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr;
+  gap: 0.5rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.rc-flow-item:last-child { border-bottom: none; }
+
+.rc-flow-item dt {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--coral);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-top: 0.2rem;
+  white-space: nowrap;
+}
+
+.rc-flow-item dd {
+  font-size: 0.83rem;
+  color: var(--ink2);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* 다크 카드(highlight) 내부 flow 색상 보정 */
+.rc.highlight .rc-flow        { border-top-color: rgba(255,255,255,0.12); }
+.rc.highlight .rc-flow-item   { border-bottom-color: rgba(255,255,255,0.08); }
+.rc.highlight .rc-flow-item dt { color: #93C5FD; }
+.rc.highlight .rc-flow-item dd { color: rgba(255,255,255,0.72); }
+
 /* ===== CONTACT ===== */
 .contact-block { max-width: 600px; }
 
@@ -1171,11 +1201,11 @@ section.hero {
 /* ===== REVEAL ANIMATIONS ===== */
 .reveal-up, .reveal-left, .reveal-right {
   opacity: 0;
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.reveal-up    { transform: translateY(36px); }
-.reveal-left  { transform: translateX(-40px); }
-.reveal-right { transform: translateX(40px); }
+.reveal-up    { transform: translateY(12px); }
+.reveal-left  { transform: translateX(-12px); }
+.reveal-right { transform: translateX(12px); }
 
 .revealed { opacity: 1 !important; transform: none !important; }
 
