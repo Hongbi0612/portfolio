@@ -874,7 +874,7 @@ section.hero {
 .rc.compact .rc-num  { font-size: 1.6rem; }
 .rc.compact h3 { font-size: 0.98rem; }
 
-.rc-body { padding: 1.75rem; }
+.rc-body { padding: 1.5rem; }
 
 .rc.highlight {
   background: var(--navy);
@@ -1271,8 +1271,8 @@ section.hero {
 
 .rc-flow-item {
   display: grid;
-  grid-template-columns: 2.2rem 1fr;
-  gap: 0.5rem;
+  grid-template-columns: 1.8rem 1fr;
+  gap: 0.3rem;
   padding: 0.3rem 0;
   border-bottom: 1px solid var(--border);
   align-items: start;
