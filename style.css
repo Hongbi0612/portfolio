@@ -807,6 +807,7 @@ section.hero {
 .pc-bar.base  { background: #D1D5DB; }
 .pc-bar.up32  { background: #60A5FA; }
 .pc-bar.up51  { background: var(--coral); }
+.pc-bar.up154 { background: linear-gradient(180deg, #FF4D4D 0%, var(--coral) 100%); }
 .pc-bar.tbd   { background: var(--coral); }
 
 .pc-val { font-size: 0.78rem; font-weight: 800; color: white; }
